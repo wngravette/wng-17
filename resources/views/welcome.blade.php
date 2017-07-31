@@ -4,91 +4,93 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <title>William Naughton-Gravette</title>
+        <link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
+        <header>
+            <div class="pure-g">
+                <div class="pure-u-4-24">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
                 </div>
+                <div class="pure-u-16-24">
+                    <div class="l-box">
+                        <h1>William Naughton-Gravette &#8212; <span>reading Politics &amp; International Relations</span></h1>
+                    </div>
+                </div>
+                <div class="pure-u-4-24">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+            </div>
+        </header>
+        <div class="pure-g">
+            <div class="pure-u-4-24">
+
+            </div>
+            <div class="pure-u-10-24">
+                @foreach ($posts as $post)
+                <div class="pure-u-1">
+                    <div class="l-box">
+                        <p>
+                            <span>{{$post->time}} &#8212;</span> {{$post->word_count}} words
+                        </p>
+                        <p>
+                        {{$post->post}}
+                        </p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+            <div class="pure-u-1-24">
+
+            </div>
+            <div class="pure-u-5-24 sidebar">
+                <div class="pure-u-1">
+                    <div class="l-box">
+                        <p>
+                            <span>Longer Writings</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-u-1 sidebar-item">
+                    <div class="l-box">
+                        <p>
+                            <i>Understanding the Copenhagen School of Security Studies as a Lens to Approach the Problem of Global Climate Change <span>&#8212; 2017 &middot; 3261 words</span></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-u-1 sidebar-item">
+                    <div class="l-box">
+                        <p>
+                            <i>A Discussion of the Relationship Between Resource Dependence and the Existence and Endurance of Authoritarianism in Africa <span>&#8212; 2017 &middot; 3324 words</span></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-u-1 sidebar-item">
+                    <div class="l-box">
+                        <p>
+                            <i>Approaching Realist Arguments for the Iraq War (with a brief history of Realism) <span>&#8212; 2016 &middot; 2804 words</span></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-u-1 sidebar-item">
+                    <div class="l-box">
+                        <p>
+                            <i>The Media Cycle & Corporate Pressures of the 21st Century, and its Implications for Investigative Journalism <span>&#8212; 2016 &middot; 2301 words</span></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-u-1 sidebar-item">
+                    <div class="l-box">
+                        <p>
+                            <i>Evaluating Australia's Increasingly Unstable Electorate <span>&#8212; 2016 &middot; 2197 words</span></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pure-u-5-24">
+
             </div>
         </div>
     </body>
