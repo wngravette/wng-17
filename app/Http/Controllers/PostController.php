@@ -8,12 +8,11 @@ use App\Post;
 
 class PostController extends Controller
 {
-    public function store(Request $request) 
+    public function store(Request $data) 
 	{
 		$post = new Post;
-	    	$input = $request->input;
-	    	$post->post = $input->post;
-	    	$post->word_count = str_word_count($input->post);
+	    	$post->post = $data->post;
+	    	$post->word_count = str_word_count($data->post);
 	    
 	    	$post->save();
 	}
