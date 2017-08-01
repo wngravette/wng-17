@@ -14,4 +14,8 @@
         </div>
     </div>
 </div>
+<form action="/posts" method="post">
+<textarea name="post"/>
+<input type="submit">
+</form>
 @endsection
