@@ -15,7 +15,7 @@
     </div>
 </div>
 <form action="/posts" method="post">
-<textarea name="post"/>
+<textarea name="post"></textarea>
 <input type="submit">
 </form>
 @endsection
