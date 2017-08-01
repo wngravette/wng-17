@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=4uuolpfw6awx7fpybcgj99swxtpuog98rnozur9zawapav5w"></script>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
