@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'FrontendController@index');
+Route::get('/essay', 'EssayController@view');
 Route::resource('posts', 'PostController');
 
 Auth::routes();
