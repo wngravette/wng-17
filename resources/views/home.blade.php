@@ -15,6 +15,7 @@
     </div>
 </div>
 <form action="/posts" method="post">
+{{ csrf_field() }}
 <textarea name="post"></textarea>
 <input type="submit">
 </form>
