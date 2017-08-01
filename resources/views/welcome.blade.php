@@ -36,7 +36,7 @@
                             <span>{{$post->time}} &#8212;</span> {{$post->word_count}} words
                         </p>
                         <p>
-                        {{$post->post}}
+                        {!! $post->post !!}
                         </p>
                     </div>
                 </div>
