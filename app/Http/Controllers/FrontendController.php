@@ -11,7 +11,7 @@ use App\Post;
 class FrontendController extends Controller
 {
     public function index() {
-        $posts = Post::all();
+        $posts = Post::all()->sortBy('created_at');
 
         foreach ($posts as $post) {
 
