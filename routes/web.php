@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'FrontendController@index');
+Route::resource('post');
 
 Auth::routes();
 
