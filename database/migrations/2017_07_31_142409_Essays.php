@@ -13,9 +13,14 @@ class Essays extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('essays', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('essay');
+            $table->integer('word_count');
+            $table->string('publication_year');
+            $table->timestamps();
+        });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -23,6 +28,6 @@ class Essays extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('essays');
     }
 }
