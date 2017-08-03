@@ -80,6 +80,10 @@ header {
   margin-top: 15px;
 }
 
+.essay {
+  margin-bottom: 10em;
+}
+
 .essay p {
   text-align: justify;
   text-indent: 3em;
