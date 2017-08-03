@@ -29,7 +29,7 @@
             <div class="pure-u-4-24">
 
             </div>
-            <div class="pure-u-10-24">
+            <div class="pure-u-9-24">
                 @foreach ($posts as $post)
                 <div class="pure-u-1">
                     <div class="l-box">
@@ -60,7 +60,7 @@
             <div class="pure-u-1-24">
 
             </div>
-            <div class="pure-u-5-24 sidebar">
+            <div class="pure-u-6-24 sidebar">
                 <div class="pure-u-1">
                     <div class="l-box">
                         <p>
