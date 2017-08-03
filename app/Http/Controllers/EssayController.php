@@ -21,6 +21,7 @@ class EssayController extends Controller
         $essay->word_count = $data->word_count;
         $essay->publication_year = $data->word_count;
         $essay->slug = $data->slug;
+        $essay->title = $data->title;
 
     	$essay->save();
     }

@@ -26,6 +26,7 @@
 <textarea name="essay"></textarea>
 <input type="text" name="word_count" placeholder="wd count" />
 <input type="text" name="publication_year" placeholder="pub year" />
+<input type="text" name="title" placeholder="title" />
 <input type="text" name="slug" placeholder="slug" />
 <input type="submit">
 </form>
