@@ -16,7 +16,18 @@
                 </div>
                 <div class="pure-u-16-24">
                     <div class="l-box">
-                        <h1>&larr; Go back</h1>
+                        <h1>William Naughton-Gravette</h1>
+                    </div>
+                </div>
+                <div class="pure-u-4-24">
+
+                </div>
+                <div class="pure-u-4-24">
+
+                </div>
+                <div class="pure-u-16-24">
+                    <div class="l-box">
+                        <h1><a onclick="window.history.go(-1); return false;">&larr; Go back</a></h1>
                     </div>
                 </div>
                 <div class="pure-u-4-24">
