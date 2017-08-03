@@ -7,6 +7,11 @@
         <title>William Naughton-Gravette</title>
         <link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet" type="text/css">
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+        <meta property="og:title" content="{{$essay->title}}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="wpsng.xyz/essays/{{$essay->id}}/{{$essay->slug}}" />
+        <meta property='article:author' content='https://www.facebook.com/wpsng' />
+        <meta property='og:site_name' content='William Naughton-Gravette' />
     </head>
     <body>
         <header>
