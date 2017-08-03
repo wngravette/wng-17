@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cardo:400,400i,700);.l-box {
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Lato);.l-box {
   padding: 1em;
 }
 
@@ -26,6 +26,16 @@ h2 {
   font-size: 0.8em;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
 header {
   margin-top: 5em;
 }
@@ -38,5 +48,35 @@ header {
   color: #999999;
   font-weight: normal;
   font-style: normal;
+}
+
+.link {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  font-family: 'Lato';
+  margin-left: 1em;
+}
+
+.link .desc {
+  width: 300px;
+  display: inline-block;
+}
+
+.link i {
+  margin-left: 0.3em;
+}
+
+.link img {
+  width: 100%;
+}
+
+.link p {
+  margin: 0;
+}
+
+.link p.site {
+  color: #8a8a8a;
+  font-size: 80%;
+  margin-top: 15px;
 }
 

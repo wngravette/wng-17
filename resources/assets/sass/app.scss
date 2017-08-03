@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Lato');
 
 // Variables
 @import "variables";
@@ -32,6 +32,17 @@ h2 {
     font-size: 0.8em;
 }
 
+a {
+    &:link, &:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:hover {
+        border-bottom: 1px solid black;
+    }
+}
+
 // template structure
 
 header {
@@ -49,5 +60,35 @@ header {
         color: #999999;
         font-weight: normal;
         font-style: normal;
+    }
+}
+
+.link {
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    font-family: 'Lato';
+    margin-left: 1em;
+
+    .desc {
+        width: 300px;
+        display: inline-block;
+    }
+
+    i {
+        margin-left: 0.3em;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin: 0;
+
+        &.site {
+            color: #8a8a8a;
+            font-size: 80%;
+            margin-top: 15px;
+        }
     }
 }

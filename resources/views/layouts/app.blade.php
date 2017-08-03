@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=4uuolpfw6awx7fpybcgj99swxtpuog98rnozur9zawapav5w"></script>
     <script>tinymce.init({ selector: "textarea",
-                                     plugins: "lists",
-                                     toolbar: "numlist bullist" });
+                                     plugins: "lists link",
+                                     toolbar: "numlist bullist link" });
     </script>
-    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -80,6 +86,5 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

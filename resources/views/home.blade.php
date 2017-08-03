@@ -17,6 +17,7 @@
 <form action="/posts" method="post">
 {{ csrf_field() }}
 <textarea name="post"></textarea>
+<input type="text" name="link" placeholder="link" />
 <input type="submit">
 </form>
 @endsection

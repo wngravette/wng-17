@@ -7,6 +7,7 @@
         <title>William Naughton-Gravette</title>
         <link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet" type="text/css">
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+        <script src="https://use.fontawesome.com/2aab5fdb89.js"></script>
     </head>
     <body>
         <header>
@@ -40,6 +41,20 @@
                         </p>
                     </div>
                 </div>
+                @if ($post->link)
+                <div class="pure-u-10-24 link">
+                        <div class="l-box">
+                            <p>
+                                <a href="{{$post->link}}" target="_blank">
+                                    "{{$post->link_name}}"
+                                </a>
+                            </p>
+                            <p class="site">
+                                {{$post->link_site}} <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                </div>
+                @endif
                 @endforeach
             </div>
             <div class="pure-u-1-24">
