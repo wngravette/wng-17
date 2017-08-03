@@ -68,41 +68,17 @@
                         </p>
                     </div>
                 </div>
+                @foreach ($essays as $essay)
                 <div class="pure-u-1 sidebar-item">
                     <div class="l-box">
                         <p>
-                            <i>Understanding the Copenhagen School of Security Studies as a Lens to Approach the Problem of Global Climate Change <span>&#8212; 2017 &middot; 3261 words</span></i>
+                            <a href="/essays/{{$essay->id}}/{{$essay->slug}}">
+                                <i>{{$essay->title}} <span>&#8212; {{$essay->publication_year}} &middot; {{$essay->word_count}} words</span></i>
+                            </a>
                         </p>
                     </div>
                 </div>
-                <div class="pure-u-1 sidebar-item">
-                    <div class="l-box">
-                        <p>
-                            <i>A Discussion of the Relationship Between Resource Dependence and the Existence and Endurance of Authoritarianism in Africa <span>&#8212; 2017 &middot; 3324 words</span></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="pure-u-1 sidebar-item">
-                    <div class="l-box">
-                        <p>
-                            <i>Approaching Realist Arguments for the Iraq War (with a brief history of Realism) <span>&#8212; 2016 &middot; 2804 words</span></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="pure-u-1 sidebar-item">
-                    <div class="l-box">
-                        <p>
-                            <i>The Media Cycle & Corporate Pressures of the 21st Century, and its Implications for Investigative Journalism <span>&#8212; 2016 &middot; 2301 words</span></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="pure-u-1 sidebar-item">
-                    <div class="l-box">
-                        <p>
-                            <i>Evaluating Australia's Increasingly Unstable Electorate <span>&#8212; 2016 &middot; 2197 words</span></i>
-                        </p>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="pure-u-5-24">
 

@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 use App\Post;
+use App\Essay;
 
 class FrontendController extends Controller
 {
     public function index() {
         $posts = Post::all()->sortByDesc('created_at');
+        $essays = Essay::all();
 
         foreach ($posts as $post) {
 
@@ -30,6 +32,7 @@ class FrontendController extends Controller
 
         return view('welcome', [
             'posts' => $posts,
+            'essays' => $essays
         ]);
     }
 }
