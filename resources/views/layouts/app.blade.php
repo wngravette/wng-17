@@ -7,7 +7,9 @@
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=4uuolpfw6awx7fpybcgj99swxtpuog98rnozur9zawapav5w"></script>
     <script>tinymce.init({ selector: "textarea",
                                      plugins: "lists link",
-                                     toolbar: "numlist bullist link" });
+                                     toolbar: "numlist bullist link",
+                                     browser_spellcheck: true,
+                                     contextmenu: false });
     </script>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
