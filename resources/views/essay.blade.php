@@ -33,13 +33,6 @@
                     {{$essay->title}}
                 </h2>
                 {!! $essay->essay !!}
-                <h4>References</h4>
-                <p class="ref">
-                    Brown, O, Hammill, A, McLeman, R 2007, ‘Climate change as the ‘new’ security threat: implications for Africa’, <em>International Affairs</em>, vol. 83, no. 6, pp. 1141–1154.
-                </p>
-                <p class="ref">
-                    Brzoska, M 2009, ‘The securitization of climate change and the power of conceptions of security’, <em>Sicherheit und Frieden (Security and Peace)</em>, vol. 3, no. 1, pp. 137–145.
-                </p>
             </div>
             <div class="pure-u-10-24">
 
