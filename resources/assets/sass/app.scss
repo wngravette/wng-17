@@ -92,3 +92,37 @@ header {
         }
     }
 }
+
+.essay {
+    p {
+        text-align: justify;
+        text-indent: 3em;
+        margin: 0;
+
+        &.ref {
+            text-indent: 0;
+            margin-bottom: 1em;
+            font-size: 90%;
+        }
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 130%;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 115%;
+        text-indent: 3em;
+    }
+
+    h4 {
+        font-weight: normal;
+        font-size: 100%;
+        color: #878787;
+        border-bottom: 1px solid #cbcbcb;
+        margin-top: 5em;
+    }
+}

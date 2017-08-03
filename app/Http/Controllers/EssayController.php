@@ -4,10 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Essay;
+
 class EssayController extends Controller
 {
     public function view()
     {
-        return view('essay');   
+        return view('essay');
+    }
+
+    public function store(Request $data)
+    {
+        $essay = new Essay;
+
+    	$essay->essay = $data->essay;
+        $essay->word_count = $data->word_count;
+        $essay->publication_year = $data->word_count;
+        $essay->slug = $data->slug;
+
+    	$essay->save();
+    }
+
+    public function show($id)
+    {
+        $essay = Essay::find($id);
+
+        return view('essay', ['essay' => $essay]);
     }
 }

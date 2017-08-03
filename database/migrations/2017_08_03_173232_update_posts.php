@@ -29,6 +29,8 @@ class UpdatePosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn('link');
+            $table->dropColumn('link_name');
+            $table->dropColumn('link_website');
         });
     }
 }

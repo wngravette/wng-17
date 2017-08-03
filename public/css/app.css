@@ -80,3 +80,35 @@ header {
   margin-top: 15px;
 }
 
+.essay p {
+  text-align: justify;
+  text-indent: 3em;
+  margin: 0;
+}
+
+.essay p.ref {
+  text-indent: 0;
+  margin-bottom: 1em;
+  font-size: 90%;
+}
+
+.essay h2 {
+  font-weight: normal;
+  font-size: 130%;
+  text-align: center;
+}
+
+.essay h3 {
+  font-weight: normal;
+  font-size: 115%;
+  text-indent: 3em;
+}
+
+.essay h4 {
+  font-weight: normal;
+  font-size: 100%;
+  color: #878787;
+  border-bottom: 1px solid #cbcbcb;
+  margin-top: 5em;
+}
+
