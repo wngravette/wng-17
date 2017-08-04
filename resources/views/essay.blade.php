@@ -51,7 +51,6 @@
                 {!! $essay->essay !!}
             </div>
             <div class="pure-u-10-24">
-
             </div>
         </div>
     </body>
